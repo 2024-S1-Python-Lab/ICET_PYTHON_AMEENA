@@ -1,0 +1,45 @@
+. Create a package graphics with modules rectangle, circle & sub-package 3Dgraphics with modules cuboid & sphere. Include methods to find area & perimeter of 
+respective figures in each module. Write programs that finds area and perimeter of figures 
+by different importing statements. (Include selective import of modules )
+ Algorithm:-
+  Step 1: Start
+  Step 2: Create Package Structure:
+    * Create a directory named graphics within the D:\python lab\Python Record\package directory.
+    * Create an empty file named __init__.py within the graphics directory.
+    * Create sub-directories: 
+       o graphics/rectangle.py
+       o graphics/circle.py
+       o graphics/graphics3d
+       o graphics/graphics3d/__init__.py
+       o graphics/graphics3d/cuboid.py
+       o graphics/graphics3d/sphere.py
+  Step 3: Define Rectangle Functions (rectangle.py):
+   * In rectangle.py: 
+       o Define the area(length, breadth) function to calculate the area of a rectangle.
+       o Define the perimeter(length, breadth) function to calculate the perimeter of a rectangle.
+  Step 4: Define Circle Functions (circle.py):
+   * In circle.py: 
+       o Import the math module.
+       o Define the area(r) function to calculate the area of a circle.
+       o Define the perimeter(r) function to calculate the perimeter of a circle.
+  Step 5: Define Cuboid Functions (cuboid.py):
+   * In cuboid.py: 
+       o Define the area(length, breadth, height) function to calculate the surface area of a cuboid.
+       o Define the perimeter(length, breadth, height) function to calculate the perimeter of a cuboid.
+  Step 6: Define Sphere Functions (sphere.py):
+   * In sphere.py: 
+       o Import the math module.
+       o Define the area(radius) function to calculate the surface area of a sphere.
+       o Define the perimeter(radius) function to calculate the perimeter of a sphere.
+  Step 7: Create Main Program (D:\python\lab\Python Record\package\graphicsMain.py):
+   * In graphicsMain.py: 
+       o Import required functions using selective imports: 
+   * from graphics.rectangle import area as rect_area, perimeter as rect_perimeter
+   * from graphics.circle import area as circ_area, perimeter as circ_perimeter
+   * from graphics.graphics3d.cuboid import area as cuboid_area, perimeter as cuboid_perimeter
+   * from graphics.graphics3d.sphere import area as sphere_area, perimeter as sphere_perimeter 1 
+       o Prompt the user for input (length, breadth, radius, height).
+       o Call the appropriate functions to calculate and print the area and perimeter for each shape.
+  Step 8: Run the Program:
+   * Execute the graphicsMain.py script.
+  Step 9: End
